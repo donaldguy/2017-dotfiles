@@ -1,14 +1,8 @@
 # Configs
 config defaultToCurrentScreen true
-config nudgePercentOf screenSize
-config resizePercentOf screenSize
-config secondsBetweenRepeat 0.1
-config checkDefaultsOnLoad true
 config windowHintsShowIcons true
 config windowHintsIgnoreHiddenWindows false
-#config windowHintsDuration 5
 config windowHintsSpread true
-#config windowHintsOrder persist
  
 # Misc Aliases
 alias showHintsLeftHand hint AOEUIYQJKX
@@ -48,10 +42,9 @@ bind e:cmd  ${showNormalHint}
 alias hyper ctrl;shift;alt;cmd
  
 # Location bindings
-bind t:${hyper} ${lefthalf}
-bind n:${hyper} ${full}
-bind s:${hyper} ${righthalf}
-bind r:${hyper} throw next
+bind j:${hyper} ${lefthalf}
+bind ;:${hyper} ${full}
+bind k:${hyper} ${righthalf}
  
 # Resize Bindings
 #bind r:${hyper} ${leftmost}
