@@ -1,0 +1,70 @@
+# Configs
+config defaultToCurrentScreen true
+config nudgePercentOf screenSize
+config resizePercentOf screenSize
+config secondsBetweenRepeat 0.1
+config checkDefaultsOnLoad true
+config windowHintsShowIcons true
+config windowHintsIgnoreHiddenWindows false
+#config windowHintsDuration 5
+config windowHintsSpread true
+#config windowHintsOrder persist
+ 
+# Misc Aliases
+alias showHintsLeftHand hint AOEUIYQJKX
+alias showNormalHint hint ASDFGHJKLQWERTYUIOPCVBN
+alias browser 'Google Chrome'
+alias editor 'Sublime Text'
+ 
+# Abstract positions
+alias full          move screenOriginX;screenOriginY                  screenSizeX;screenSizeY
+alias lefthalf      move screenOriginX;screenOriginY                  screenSizeX/2;screenSizeY
+alias righthalf     move screenOriginX+screenSizeX/2;screenOriginY    screenSizeX/2;screenSizeY
+alias rightmost     move screenOriginX+screenSizeX*0.4;screenOriginY  screenSizeX*0.6;screenSizeY
+alias rightless     move screenOriginX+screenSizeX*0.6;screenOriginY  screenSizeX*0.4;screenSizeY
+alias leftmost      move screenOriginX;screenOriginY                  screenSizeX*0.6;screenSizeY
+alias leftless      move screenOriginX;screenOriginY                  screenSizeX*0.4;screenSizeY
+ 
+# Numpad location Bindings
+bind pad0 ${showHintsLeftHand}
+bind pad1 ${leftless}
+bind pad2 push bottom bar-resize:screenSizeY/2
+bind pad3 ${rightless}
+bind pad4 ${lefthalf}
+bind pad5 ${full}
+bind pad6 ${righthalf}
+bind pad7 ${leftmost}
+bind pad8 push top bar-resize:screenSizeY/2
+bind pad9 ${rightmost}
+bind pad+ throw next
+bind pad. focus behind
+ 
+bind e:cmd  ${showNormalHint}
+ 
+# ======================================
+# The HYPER key
+# ======================================
+ 
+alias hyper ctrl;shift;alt;cmd
+ 
+# Location bindings
+bind t:${hyper} ${lefthalf}
+bind n:${hyper} ${full}
+bind s:${hyper} ${righthalf}
+bind r:${hyper} throw next
+ 
+# Resize Bindings
+#bind r:${hyper} ${leftmost}
+#bind g:${hyper} ${rightmost}
+ 
+# Focus Bindings
+bind right:${hyper}    focus right
+bind left:${hyper}     focus left
+bind up:${hyper}       focus up
+bind down:${hyper}     focus down
+ 
+# App bindings
+bind e:${hyper} focus ${browser}
+bind u:${hyper} focus ${editor}
+bind i:${hyper} focus 'iTerm'
+bind r:${hyper} focus 'Rdio'
