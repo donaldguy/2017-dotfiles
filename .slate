@@ -46,9 +46,6 @@ bind j:${hyper} ${lefthalf}
 bind ;:${hyper} ${full}
 bind k:${hyper} ${righthalf}
  
-# Resize Bindings
-#bind r:${hyper} ${leftmost}
-#bind g:${hyper} ${rightmost}
  
 # Focus Bindings
 bind right:${hyper}    focus right
@@ -58,6 +55,9 @@ bind down:${hyper}     focus down
  
 # App bindings
 bind e:${hyper} focus ${browser}
+bind w:${hyper} focus 'Safari'
 bind u:${hyper} focus ${editor}
 bind i:${hyper} focus 'iTerm'
 bind r:${hyper} focus 'Rdio'
+bind z:${hyper} focus 'Zulip'
+
