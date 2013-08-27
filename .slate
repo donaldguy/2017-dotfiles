@@ -45,6 +45,10 @@ alias hyper ctrl;shift;alt;cmd
 bind j:${hyper} ${lefthalf}
 bind ;:${hyper} ${full}
 bind k:${hyper} ${righthalf}
+
+#Throw bindings
+bind `:${hyper} throw 0 resize:min({windowSizeX,screenSizeX});min({windowSizeY,screenSizeY})
+bind 1:${hyper} throw 1 resize:windowSizeX;windowSizeY
  
  
 # Focus Bindings
