@@ -1,4 +1,3 @@
-fpath=(/usr/local/share/zsh-completions $fpath)
 source ~/.antigen/src/antigen.zsh
 
 COMPLETION_WAITING_DOTS="true"
@@ -15,9 +14,11 @@ antigen-bundle bundler
 antigen-bundle powder
 
 antigen-bundle autojump
+antigen-bundle npm
 
 antigen-bundle zsh-users/zsh-syntax-highlighting
 
-antigen-theme robbyrussell
+#antigen-theme pure
+antigen bundle sindresorhus/pure
 
 antigen-apply
