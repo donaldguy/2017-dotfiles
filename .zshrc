@@ -5,6 +5,7 @@ COMPLETION_WAITING_DOTS="true"
 antigen-use oh-my-zsh
 
 antigen-bundle osx
+antigen-bundle brew
 
 antigen-bundle git
 
