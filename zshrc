@@ -17,3 +17,5 @@ source ${ZSHRC}/functions/all.zsh
 source ${HOME}/.bash_profile
 
 source ${ZSHRC}/completions/all.zsh
+
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
