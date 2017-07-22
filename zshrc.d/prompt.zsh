@@ -1,3 +1,7 @@
+function precmd() {
+ echo -ne "\033]2;${USER}@${HOST%%.*}:${PWD/#$HOME/~}\007"
+}
+
 POWERLEVEL9K_INSTALLATION_PATH=~/.zim/modules/prompt/external-themes/powerlevel9k/powerlevel9k.zsh-theme
 POWERLEVEL9K_MODE='nerd-patched-complete'
 
